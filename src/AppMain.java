@@ -13,10 +13,16 @@ public class AppMain {
             Statement statement = connection.createStatement();
 
             // select statement
+            AppSelect appSelect = new AppSelect();
+            appSelect.SelectFunctiion(statement);
 
             // insert into
+            AppInsert appInsert = new AppInsert();
+            appInsert.InsertFunctioin(statement);
 
             // update
+            AppUpdate appUpdate = new AppUpdate();
+            appUpdate.UpdateFunction(statement);
 
         } catch (SQLException exception){
             exception.printStackTrace();

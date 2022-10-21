@@ -1,6 +1,12 @@
 import java.sql.*;
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input : ");
+        String input = scanner.next();
+
         // Done - MySQL workbench  실행 : JDBC - 
         // - User/password와 접속 IP:port(localhost:3306) 접속
         String url = "jdbc:mysql://localhost:3306/study_sqls";
